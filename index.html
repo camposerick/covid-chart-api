@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Chart</title>
+    <!-- chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Covid Chart</h1>
+        <p>
+          Choose a country and the date range to see the increase of coronavirus
+          cases
+        </p>
+      </header>
+      <form action="">
+        <select name="selectCountry" id="selectCountry"></select>
+        <input type="date" name="inInitialDate" id="inInitialDate" />
+        <input type="date" name="inFinalDate" id="inFinalDate" />
+        <input type="submit" value="submit" id="btnSubmit" />
+      </form>
+      <canvas id="myChart" width="1000" height="600"></canvas>
+      <footer>
+        <a href="https://github.com/camposerick" target="_blank"
+          ><img src="./img/icon-github.png" alt="Github Icon"
+        /></a>
+        <a href="https://www.linkedin.com/in/camposerick/" target="_blank"
+          ><img src="./img/icon-linkedin.png" alt="Linkedin Icon"
+        /></a>
+        <a href="https://twitter.com/camposerick_" target="_blank"
+          ><img src="./img/icon-twitter.png" alt="Twitter Icon"
+        /></a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
